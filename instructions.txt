@@ -1,0 +1,6 @@
+Need following done;
+
+Determine winner of game;
+Add card mapping instead of just number printout
+Allow user to draw another card
+And rules for computer drawing another card;  
