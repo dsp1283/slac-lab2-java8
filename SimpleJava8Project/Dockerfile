@@ -1,5 +1,9 @@
-FROM openjdk:8
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac Main.java
-CMD ["java", "Main"]
+FROM openjdk:8-alpine
+
+WORKDIR /app
+
+COPY src/BlackJack.java .
+
+RUN javac ./BlackJack.java
+
+CMD java BlackJack
